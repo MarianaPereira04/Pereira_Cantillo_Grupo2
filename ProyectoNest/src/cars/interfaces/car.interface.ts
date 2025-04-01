@@ -1,6 +1,11 @@
 
 export interface Car{
     id:string;
-    model:string;
-    brand:string;
+    modelo:string;
+    marca:string;
+    año:string;
+    kilometraje:string;
+    color:string;
+    tipo_combustible:string;
+    transmision:string;
 }

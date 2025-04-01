@@ -3,7 +3,7 @@ import { CarsService } from './cars.service';
 import { CreateCarDto, UpdateCarDto } from './dto';
 
 
-@Controller('cars')
+@Controller('carros')
 export class CarsController {
 
     constructor(
@@ -22,8 +22,8 @@ export class CarsController {
         return this.carsService.findOneById(id);
     }
 
-    @Get('brand/:brand')
-    getCarByBrand(@Param('brand')brand){
+    @Get('marca/:marca')
+    getCarByBrand(@Param('marca')brand){
         console.log({brand})
         return this.carsService.findOneByBrand(brand);
     }
